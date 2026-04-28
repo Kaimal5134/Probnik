@@ -54,9 +54,11 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.BackgroundColor = Color.FromArgb(133, 242, 189);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { articleDataGridViewTextBoxColumn, fioDataGridViewTextBoxColumn, idStatusDataGridViewTextBoxColumn, adrecDataGridViewTextBoxColumn, dataStartDataGridViewTextBoxColumn, dateEndDataGridViewTextBoxColumn });
             dataGridView1.DataSource = bindingSource_Order;
+            dataGridView1.GridColor = Color.FromArgb(133, 242, 189);
             dataGridView1.Location = new Point(60, 46);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -145,47 +147,56 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Red;
+            button1.Font = new Font("Comic Sans MS", 9F);
             button1.Location = new Point(612, 354);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 1;
             button1.Text = "exit";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.Red;
+            button2.Font = new Font("Comic Sans MS", 9F);
             button2.Location = new Point(53, 320);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 2;
             button2.Text = "add";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.Red;
+            button3.Font = new Font("Comic Sans MS", 9F);
             button3.Location = new Point(210, 320);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 3;
             button3.Text = "red";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
+            button4.BackColor = Color.Red;
+            button4.Font = new Font("Comic Sans MS", 9F);
             button4.Location = new Point(382, 320);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 4;
             button4.Text = "del";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // Orders
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(192, 237, 215);
             ClientSize = new Size(800, 450);
             Controls.Add(button4);
             Controls.Add(button3);

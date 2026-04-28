@@ -55,16 +55,16 @@
             button5 = new Button();
             label_fio = new Label();
             panel1 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
             pictureBox1 = new PictureBox();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)bindingSource_product).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource_tipe_product).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource_manufactur).BeginInit();
@@ -81,12 +81,14 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Red;
+            button1.Font = new Font("Comic Sans MS", 9F);
             button1.Location = new Point(493, 316);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(94, 32);
             button1.TabIndex = 0;
             button1.Text = "Назад";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // bindingSource_tipe_product
@@ -107,14 +109,18 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = Color.FromArgb(133, 242, 189);
+            textBox1.Font = new Font("Comic Sans MS", 9F);
             textBox1.Location = new Point(24, 16);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 27);
+            textBox1.Size = new Size(245, 28);
             textBox1.TabIndex = 2;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = Color.FromArgb(133, 242, 189);
+            comboBox1.Font = new Font("Comic Sans MS", 9F);
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(385, 16);
             comboBox1.Name = "comboBox1";
@@ -124,32 +130,38 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.Red;
+            button2.Font = new Font("Comic Sans MS", 9F);
             button2.Location = new Point(24, 316);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(94, 32);
             button2.TabIndex = 4;
             button2.Text = "Add";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.Red;
+            button3.Font = new Font("Comic Sans MS", 9F);
             button3.Location = new Point(175, 316);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(94, 32);
             button3.TabIndex = 5;
             button3.Text = "Redact";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.BackColor = Color.Red;
+            button4.Font = new Font("Comic Sans MS", 9F);
             button4.Location = new Point(330, 316);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(94, 32);
             button4.TabIndex = 6;
             button4.Text = "Delete";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // dataGridView1
@@ -157,6 +169,7 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.BackgroundColor = Color.FromArgb(133, 242, 189);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { articlDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, idTipeProductNavigationDataGridViewTextBoxColumn, productContentDataGridViewTextBoxColumn, idManufacturDataGridViewTextBoxColumn, idSuplierDataGridViewTextBoxColumn, priceProductDataGridViewTextBoxColumn, saleDataGridViewTextBoxColumn, kolVoDataGridViewTextBoxColumn, idEdDataGridViewTextBoxColumn, idPhotoDataGridViewImageColumn });
             dataGridView1.DataSource = bindingSource_product;
@@ -164,7 +177,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(447, 186);
+            dataGridView1.Size = new Size(447, 189);
             dataGridView1.TabIndex = 7;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
@@ -293,12 +306,13 @@
             // 
             // button5
             // 
+            button5.BackColor = Color.Red;
             button5.Location = new Point(540, 116);
             button5.Name = "button5";
-            button5.Size = new Size(97, 45);
+            button5.Size = new Size(97, 48);
             button5.TabIndex = 8;
             button5.Text = "Order";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
             // label_fio
@@ -311,6 +325,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.Control;
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label8);
@@ -323,90 +338,9 @@
             panel1.Controls.Add(label1);
             panel1.Location = new Point(643, 115);
             panel1.Name = "panel1";
-            panel1.Size = new Size(413, 261);
+            panel1.Size = new Size(413, 264);
             panel1.TabIndex = 10;
             panel1.Paint += panel1_Paint;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(29, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(30, 65);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(30, 111);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(166, 22);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(166, 65);
-            label5.Name = "label5";
-            label5.Size = new Size(50, 20);
-            label5.TabIndex = 4;
-            label5.Text = "label5";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(166, 114);
-            label6.Name = "label6";
-            label6.Size = new Size(50, 20);
-            label6.TabIndex = 5;
-            label6.Text = "label6";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(287, 21);
-            label7.Name = "label7";
-            label7.Size = new Size(50, 20);
-            label7.TabIndex = 6;
-            label7.Text = "label7";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(285, 69);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 20);
-            label8.TabIndex = 7;
-            label8.Text = "label8";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(289, 109);
-            label9.Name = "label9";
-            label9.Size = new Size(50, 20);
-            label9.TabIndex = 8;
-            label9.Text = "label9";
             // 
             // pictureBox1
             // 
@@ -416,10 +350,83 @@
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(289, 109);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 20);
+            label9.TabIndex = 8;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(285, 69);
+            label8.Name = "label8";
+            label8.Size = new Size(0, 20);
+            label8.TabIndex = 7;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(287, 21);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 20);
+            label7.TabIndex = 6;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(166, 114);
+            label6.Name = "label6";
+            label6.Size = new Size(0, 20);
+            label6.TabIndex = 5;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(166, 65);
+            label5.Name = "label5";
+            label5.Size = new Size(0, 20);
+            label5.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(166, 22);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 20);
+            label4.TabIndex = 3;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(30, 111);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 20);
+            label3.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(30, 65);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 20);
+            label2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(29, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 0;
+            // 
             // mainform
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(192, 237, 215);
             ClientSize = new Size(1068, 416);
             Controls.Add(panel1);
             Controls.Add(label_fio);
